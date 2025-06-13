@@ -1,0 +1,167 @@
+{
+  "type": "UiSdlConnected<UiSdlDataGrid>",
+  "component": {
+    "header": {
+      "title": "Reliability.WorkOrdersGrid.Title"
+    },
+    "removableColumns": true,
+    "paginationConfig": {
+      "pageSize": 20,
+      "pagination": true
+    },
+    "filterBar": true,
+    "rowActions": [
+      {
+        "name": "Reliability.WorkOrdersGrid.editWorkOrder",
+        "iconSuffix": "pen",
+        "actionSuffix": "EDIT"
+      }
+    ],
+    "tableActions": [
+      {
+        "type": "UiSdlActionGroup",
+        "name": "Reliability.WorkOrdersGrid.CreateWorkOrder",
+        "iconSuffix": "plus",
+        "actionSuffix": "CREATE_WORK_ORDER"
+      },
+      {
+        "type": "UiSdlActionGroup",
+        "name": "Reliability.WorkOrdersGrid.DownloadPDF",
+        "iconSuffix": "download",
+        "actionSuffix": "DOWNLOAD_PDF"
+      }
+    ],
+    "dataSpec": {
+      "dataType": "TranslationHelper",
+      "contextVars": {
+        "parent.facility.id": {
+          "type": "UiSdlApplicationStateValueParam",
+          "id": "Reliability.ReliabilityApplicationState",
+          "path": "selectedFacilities"
+        }
+      },
+      // Trigger the TranslationHelper function so that the translated values can be used in transform
+      "actionArgs": {
+        "translationSpec": {
+          "typeName": "WorkOrder",
+          "translationMap": {
+            "notAssignedText": "Reliability.NotAssigned"
+          }
+        }
+      },
+      "dataTransforms": ["UiSdlTransformWorkOrderFetchResult"],
+      "columnFields": [
+        {
+          "fieldName": "name",
+          "label": "Reliability.WorkOrdersGrid.Name",
+          "searchable": true,
+          "iconName": "search",
+          "sortable": true
+        },
+        {
+          "fieldName": "description",
+          "label": "Reliability.WorkOrdersGrid.Description",
+          "searchable": true,
+          "iconName": "search",
+          "sortable": true
+        },
+        {
+          "fieldName": "parent.facility.name",
+          "label": "Reliability.Facility",
+          "searchable": true,
+          "iconName": "search",
+          "sortable": true
+        },
+        {
+          "fieldName": "parent.name",
+          "label": "Reliability.WorkOrdersGrid.AssetName",
+          "searchable": true,
+          "iconName": "search",
+          "sortable": true,
+          "redirectLink": {
+            "targetPage": "AssetDetail",
+            "pageVariable": "assetId",
+            "pageVariableFilterField": "parent.id",
+            "href": "reliability/assets/{{assetId}}"
+          }
+        },
+        {
+          "fieldName": "parent.assetLevel",
+          "label": "Reliability.WorkOrdersGrid.Level",
+          "sortable": true
+        },
+        {
+          "fieldName": "parent.assetClass.name",
+          "label": "Reliability.WorkOrdersGrid.AssetClass",
+          "sortable": true
+        },
+        {
+          "fieldName": "assetCase.name",
+          "label": "Reliability.WorkOrdersGrid.Case",
+          "sortable": true
+        },
+        {
+          "fieldName": "status",
+          "label": "Reliability.WorkOrdersGrid.StatusCode",
+          "sortable": true
+        },
+        {
+          "fieldName": "assigneeName",
+          "label": "Reliability.WorkOrdersGrid.Operator",
+          "sortable": true
+        },
+        {
+          "fieldName": "creationDate",
+          "label": "Reliability.WorkOrdersGrid.CreationDate",
+          "sortable": true,
+          "format": {
+            "type": "UiSdlDateTimeParamKindFormat",
+            "spec": {
+              "year": "numeric",
+              "month": "2-digit",
+              "day": "2-digit"
+            }
+          },
+          "subInformation": {
+            "fieldName": "creationDate",
+            "format": {
+              "type": "UiSdlDateTimeParamKindFormat",
+              "spec": {
+                "hour": "2-digit",
+                "minute": "2-digit",
+                "timeZoneName": "short"
+              }
+            }
+          },
+          "defaultSortField": {
+            "sortOrder": "descending"
+          }
+        },
+        {
+          "fieldName": "workDueDate",
+          "label": "Reliability.DueDate",
+          "sortable": true,
+          "format": {
+            "type": "UiSdlDateTimeParamKindFormat",
+            "spec": {
+              "year": "numeric",
+              "month": "2-digit",
+              "day": "2-digit"
+            }
+          },
+          "subInformation": {
+            "fieldName": "workDueDate",
+            "format": {
+              "type": "UiSdlDateTimeParamKindFormat",
+              "spec": {
+                "hour": "2-digit",
+                "minute": "2-digit",
+                "timeZoneName": "short"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
