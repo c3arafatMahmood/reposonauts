@@ -1,0 +1,9 @@
+{
+    "type" : "UiSdlSidePanelSection",
+    "closedIcons" : [ "filter"],
+    "children" : [
+      {
+        "id" : "Reposonauts.OverviewFilterPanel"
+      }
+    ]
+}

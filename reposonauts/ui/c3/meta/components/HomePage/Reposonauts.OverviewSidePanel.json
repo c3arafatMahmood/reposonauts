@@ -1,0 +1,20 @@
+{
+    "type": "UiSdlConnected<UiSdlSidePanel>",
+    "component": {
+      "wrapWithMetadataId": true,
+      "alignment": "LEFT",
+      "position": "PUSH",
+      "closeBehavior": "COLLAPSE",
+      "open": true,
+      "header": {
+        "title": "Reposonauts.OverviewFilterPanel.Filter",
+        "openIcon" : "arrow-to-right",
+        "closeIcon" : "arrow-to-left"
+      },
+      "sections": [
+        {
+          "id": "Reposonauts.OverviewSidePanelSection"
+        }
+      ]
+    }
+  }
