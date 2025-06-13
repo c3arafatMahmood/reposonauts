@@ -4,25 +4,25 @@
     "dataSpec": {
       "fields": [
         {
-          "label": "Reliability.WorkOrder.TotalWorkOrders",
+          "label": "Reposonauts.WorkOrder.TotalWorkOrders",
           "fieldName": "workOrderCount"
         },
         {
-          "label": "Reliability.WorkOrder.WorkOrdersWithInsufficientParts",
+          "label": "Reposonauts.WorkOrder.WorkOrdersWithInsufficientParts",
           "fieldName": "insufficientPartsCount",
           "valueIconMap": {
             "type": "UiSdlComponentDataSpecStateParam",
-            "id": "Reliability.WorkOrderDefinitionList",
+            "id": "Reposonauts.WorkOrderDefinitionList",
             "path": "insufficientPartsCount",
             "action": "({[statePathValue]: 'exclamation-triangle', '0' : ''})"
           }
         },
         {
-          "label": "Reliability.WorkOrder.WorkOrdersWithNoPartList",
+          "label": "Reposonauts.WorkOrder.WorkOrdersWithNoPartList",
           "fieldName": "noPartsNeeded",
           "valueIconMap": {
             "type": "UiSdlComponentDataSpecStateParam",
-            "id": "Reliability.WorkOrderDefinitionList",
+            "id": "Reposonauts.WorkOrderDefinitionList",
             "path": "noPartsNeeded",
             "action": "({[statePathValue]: 'cancel', '0' : ''})"
           }
@@ -33,14 +33,14 @@
   "component": {
     "wrapWithMetadataId": true,
     "header": {
-      "title": "Reliability.WorkOrder.AllWorkOrderSummary"
+      "title": "Reposonauts.WorkOrder.AllWorkOrderSummary"
     },
     "dataSpec": {
       "dataType": "WorkOrder",
       "contextVars": {
         "facilityId": {
           "type": "UiSdlApplicationStateValueParam",
-          "id": "Reliability.ReliabilityApplicationState",
+          "id": "Reposonauts.ReposonautsApplicationState",
           "path": "selectedFacilities"
         }
       },

@@ -2,48 +2,48 @@
   "type": "UiSdlConnected<UiSdlLayoutNavMenu>",
   "applicationStateRef": {
     "type": "UiSdlApplicationStateRef",
-    "id": "Reliability.ReliabilityApplicationState"
+    "id": "Reposonauts.ReposonautsApplicationState"
   },
   "component": {
-    "id": "Reliability.CaseDetail",
+    "id": "Reposonauts.CaseDetail",
     "children": [
       {
-        "id": "Reliability.CaseDetailPageTitle"
+        "id": "Reposonauts.CaseDetailPageTitle"
       },
       {
-        "id": "Reliability.CaseDetailSidePanelContentContainer"
+        "id": "Reposonauts.CaseDetailSidePanelContentContainer"
       },
       {
-        "id": "Reliability.CloseCaseModal"
+        "id": "Reposonauts.CloseCaseModal"
       },
       {
-        "id": "Reliability.AddCommentModal"
+        "id": "Reposonauts.AddCommentModal"
       },
       {
-        "id": "Reliability.ErrorModal"
+        "id": "Reposonauts.ErrorModal"
       },
       {
-        "id": "Reliability.EditCaseModal"
+        "id": "Reposonauts.EditCaseModal"
       },
       {
-        "id": "Reliability.CreateWorkOrderModal"
+        "id": "Reposonauts.CreateWorkOrderModal"
       },
       // TODO:
       //  {
-      //   "id" : "Reliability.WorkOrderSavedModal"
+      //   "id" : "Reposonauts.WorkOrderSavedModal"
       // },
       {
-        "id": "Reliability.AddAlertsModal"
+        "id": "Reposonauts.AddAlertsModal"
       },
       {
-        "id": "Reliability.AddFailureModeModal"
+        "id": "Reposonauts.AddFailureModeModal"
       },
       {
-        "id" : "Reliability.DeleteFailureModeConfirmationModal"
+        "id" : "Reposonauts.DeleteFailureModeConfirmationModal"
       }
     ],
     "navMenu": {
-      "id": "Reliability.SideMenu"
+      "id": "Reposonauts.SideMenu"
     }
   }
 }

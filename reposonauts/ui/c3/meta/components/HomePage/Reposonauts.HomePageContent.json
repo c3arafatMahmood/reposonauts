@@ -2,11 +2,11 @@
   "type" : "UiSdlConnected<UiSdlSidePanelContainer>",
   "component" : {
     "sidePanel" : {
-      "id" : "BloomOptimization.OverviewSidePanel",
+      "id" : "Reposonauts.OverviewSidePanel",
       "alignment" : "LEFT"
     },
     "child" : {
-      "id" : "BloomOptimization.OverviewMetricTile"
+      "id" : "Reposonauts.OverviewMetricTile"
     }
   }
 }
