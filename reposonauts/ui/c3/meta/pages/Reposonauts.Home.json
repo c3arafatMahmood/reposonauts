@@ -1,0 +1,14 @@
+{
+    "type": "UiSdlConnected<UiSdlLayoutNavigation>",
+    "component": {
+      "navigation": {
+        "id": "Reposonauts.SideMenu"
+      },
+      "pageTitle": {
+        "id": "Reposonauts.HomePageTitle"
+      },
+      "content": {
+        "id": "Reposonauts.HomePageContent"
+      }
+    }
+  }

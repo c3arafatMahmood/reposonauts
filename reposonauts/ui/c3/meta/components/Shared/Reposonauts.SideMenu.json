@@ -1,0 +1,20 @@
+{
+    "type": "UiSdlConnected<UiSdlNavMenu>",
+    "component": {
+      "logoImageUrl": "assets/images/menu/logo.svg",
+      "itemSections": [
+        {
+          "items": [
+            {
+              "id": "Reposonauts.Home",
+              "title": "Reposonauts.HomePage.Title",
+              "icon": "grid-horizontal",
+              "redirectRoute": {
+                "urlPath": "/"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
