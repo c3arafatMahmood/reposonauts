@@ -49,5 +49,11 @@
         }
       ]
     }
-  }
+  },
+  "effectTriggers": [
+    {
+      "trigger": "Reposonauts.OverviewFilterPanel.FILTER_SUBMIT",
+      "effectType": "UpdateFilterPanelSubmitEpic"
+    }
+  ]
 }
