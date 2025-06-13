@@ -1,0 +1,49 @@
+{
+  "type": "UiSdlConnected<UiSdlLayoutNavMenu>",
+  "applicationStateRef": {
+    "type": "UiSdlApplicationStateRef",
+    "id": "Reliability.ReliabilityApplicationState"
+  },
+  "component": {
+    "id": "Reliability.CaseDetail",
+    "children": [
+      {
+        "id": "Reliability.CaseDetailPageTitle"
+      },
+      {
+        "id": "Reliability.CaseDetailSidePanelContentContainer"
+      },
+      {
+        "id": "Reliability.CloseCaseModal"
+      },
+      {
+        "id": "Reliability.AddCommentModal"
+      },
+      {
+        "id": "Reliability.ErrorModal"
+      },
+      {
+        "id": "Reliability.EditCaseModal"
+      },
+      {
+        "id": "Reliability.CreateWorkOrderModal"
+      },
+      // TODO:
+      //  {
+      //   "id" : "Reliability.WorkOrderSavedModal"
+      // },
+      {
+        "id": "Reliability.AddAlertsModal"
+      },
+      {
+        "id": "Reliability.AddFailureModeModal"
+      },
+      {
+        "id" : "Reliability.DeleteFailureModeConfirmationModal"
+      }
+    ],
+    "navMenu": {
+      "id": "Reliability.SideMenu"
+    }
+  }
+}

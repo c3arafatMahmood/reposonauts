@@ -1,0 +1,18 @@
+{
+  "type": "UiSdlConditionalRenderer",
+  "condition": {
+    "type": "UiDynamicValueRenderCondition",
+    "param": {
+      "type": "UiSdlApplicationStateValueParam",
+      "id": "Reliability.ReposonautsApplicationState",
+      "path": "isUserUnauthorized"
+    }
+  },
+  "useElseComponentAsFallback": true,
+  "thenComponent": {
+    "id": "SDL.UnauthorizedPage"
+  },
+  "elseComponent": {
+    "id": "Reposonauts.CaseDetail"
+  }
+}
