@@ -1,0 +1,6 @@
+{
+    "type": "UiSdlConnected<UiSdlPageTitle>",
+    "component": {
+      "title": "Reposonauts.HomePage.Title"
+    }
+}
