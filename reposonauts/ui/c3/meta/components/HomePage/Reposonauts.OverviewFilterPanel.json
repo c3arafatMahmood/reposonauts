@@ -1,0 +1,53 @@
+{
+  "type": "UiSdlConnected<UiSdlFilterPanel>",
+  "component": {
+    "wrapWithMetadataId": true,
+    "dataSpec": {
+      "fieldSets": [
+        {
+          "title": "Reposonauts.OverviewFilterPanel.Asset",
+          "fields": [
+            {
+              "type": "UiSdlFieldSetFilterFieldSetting",
+              "label": "Reposonauts.OverviewFilterPanel.Sites",
+              "fieldName": "siteId",
+              "filterElement": {
+                "type": "UiSdlSingleSearchFilterField",
+                "inputElement": {
+                  "placeholder": "Reposonauts.OverviewFilterPanel.AllSites",
+                  "dataSpec": {
+                    "dataType": "FuelCellSiteAsset",
+                    "actionName": "fetch",
+                    "dataPath": "objs",
+                    "valueField": "id",
+                    "displayField": "id"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "Date",
+          "fields": [
+            {
+              "type": "UiSdlFieldSetFilterFieldSetting",
+              "fieldName": "date",
+              "filterElement": {
+                "type": "UiSdlDateTimeRangeInputFilterField",
+                "inputElement": {
+                  "startLabel": "Start Date",
+                  "startPlaceholder": "Start Date",
+                  "endLabel": "End Date",
+                  "endPlaceholder": "End Date",
+                  "showTimePicker": false
+
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

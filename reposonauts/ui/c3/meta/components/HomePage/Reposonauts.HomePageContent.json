@@ -1,0 +1,12 @@
+{
+  "type" : "UiSdlConnected<UiSdlSidePanelContainer>",
+  "component" : {
+    "sidePanel" : {
+      "id" : "BloomOptimization.OverviewSidePanel",
+      "alignment" : "LEFT"
+    },
+    "child" : {
+      "id" : "BloomOptimization.OverviewMetricTile"
+    }
+  }
+}
