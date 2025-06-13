@@ -1,0 +1,48 @@
+{
+  "type": "UiSdlConnected<UiSdlMetricTile>",
+  "component": {
+    "header": {
+      "title": "Reposonauts.SiteOptEfficiencyMetricTile.Title",
+      "iconConfig": {
+        "icon": "info",
+        "tooltipText": "Reposonauts.SiteOptEfficiencyMetricTile.TitleTooltip"
+      }
+    },
+    "hideLegend": true,
+    "hideTimeHorizonLabel": false,
+    "tooltipPositionBias": "Right",
+    "showSparkline": true,
+    "noTimeZoneConversion": true,
+    "dataSpec": {
+      "contextVars": {
+        "id": {
+          "type": "UiSdlComponentStateParam",
+          "componentType": "component",
+          "id": "Reposonauts.OptimizationGlobalFilter",
+          "path": "value"
+        }
+      },
+      "dataType": "ReliabilityAsset",
+      "historicSparkline": {
+        "color": "#009877",
+        "name": "Reposonauts.Name",
+        "timeHorizon": "1MONTH",
+        "evaluateAction": "EVAL",
+        "entityId": "${id}",
+        "interval": "HOUR",
+        "metricName": "Efficiency",
+        "unit": {
+          "id": "percent"
+        }
+      },
+      "kpiTrendComparison": {
+        "metricName": "Efficiency",
+        "evaluateAction": "EVAL",
+        "interval": "HOUR",
+        "intervalLength": 30,
+        "entityId": "${id}",
+        "percentage": true
+      }
+    }
+  }
+}
